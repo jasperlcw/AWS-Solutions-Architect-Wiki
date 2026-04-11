@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "fb0f7540ecce1017",
+    "type": "split",
+    "children": [
+      {
+        "id": "013aae9e1914d61e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30a01c0c2d6a83c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/aws-certification/practice-questions/no-explanations/AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "01880023c15ee5b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "0470405839472332",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f434120eac0d5086",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ad91b7d4b36df4d8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b8dc513314bcbc10",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6bad16bad4f2f556",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e8b183c0b2b0361",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9c7cab316e7076cd",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "raw/aws-certification/practice-questions/no-explanations/AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try"
+            }
+          },
+          {
+            "id": "c4d4858daee44801",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "raw/aws-certification/practice-questions/no-explanations/AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try"
+            }
+          },
+          {
+            "id": "ca2d23ae85140344",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "850a3430b8d6befd",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d3a4047bb71cc42e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "raw/aws-certification/practice-questions/no-explanations/AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "30a01c0c2d6a83c9",
+  "lastOpenFiles": [
+    "wiki/aws-certification/nat-gateways-vs-nat-instances.md",
+    "raw/aws-certification/2026-04-10-compare-nat-gateways-and-nat-instances.md",
+    "wiki/aws-certification/network-access-control-lists.md",
+    "raw/aws-certification/2026-04-10-control-subnet-traffic-with-network-access-control-lists.md",
+    "wiki/aws-certification/amazon-vpc.md",
+    "raw/aws-certification/2026-04-10-what-is-amazon-vpc.md",
+    "raw/aws-certification/practice-questions/AWS Certified Solutions Architect – Associate - Practice (year).md",
+    "raw/aws-certification/practice-questions/no-explanations/AWS Solutions Architect Associate Practice Test - Ace The AWS Solutions Architect Associate On First Try.md",
+    "raw/aws-certification/service-docs/amazon-neptune.md",
+    "wiki/aws-certification/amazon-dynamodb.md",
+    "raw/aws-certification/2026-04-09-what-is-amazon-dynamodb.md",
+    "raw/aws-certification/service-docs/aws-iam-identity-center.md",
+    "2026-04-09.md",
+    "wiki/aws-certification/amazon-sqs.md",
+    "wiki/aws-certification/amazon-efs.md",
+    "wiki/aws-certification/amazon-ebs.md",
+    "wiki/aws-certification/aws-lambda.md",
+    "raw/aws-certification/2026-04-09-what-is-amazon-sqs.md",
+    "raw/aws-certification/2026-04-09-what-is-amazon-efs.md",
+    "raw/aws-certification/2026-04-09-what-is-amazon-ebs.md",
+    "raw/aws-certification/2026-04-09-what-is-aws-lambda.md",
+    "ExamCert.md",
+    "raw/aws-certification/practice-questions/Free AWS SAA-C03 Practice Questions 2026 300+ Exam Questions.md",
+    "wiki/aws-certification/amazon-aurora.md",
+    "wiki/aws-certification/amazon-rds.md",
+    "raw/aws-certification/2026-04-09-what-is-amazon-aurora.md",
+    "Untitled.canvas",
+    "Untitled 3.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "raw/aws-certification/service-docs",
+    "scripts/generate-aws-service-docs.ps1",
+    "scripts",
+    "raw/aws-doc-pages/accessing-aws-services.html",
+    "raw/aws-doc-pages/media-services.html",
+    "raw/aws-doc-pages/machine-learning.html",
+    "raw/aws-doc-pages/mobile-services.html",
+    "raw/aws-doc-pages/containers.html",
+    "raw/aws-doc-pages/storage-services.html",
+    "raw/aws-doc-pages/security-services.html"
+  ]
+}
