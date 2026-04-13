@@ -186,6 +186,8 @@ D. If you have more than 50 TB of data to transfer, use Snowball.
 
 Correct Answer: B
 
+Note: Snowball is usually the better option if you don't have Direct Connect set up, where transferring large amounts of data over VPN on the public internet could easily fail. The public internet has too many points of failure, whereas with Direct Connect, there is a direct connection with AWS over a dedicated line. 
+
 
 
 13\. You want to build out storage for an application that you anticipated growing in size exponentially over the next 12 months. Which S3 storage class would you use?
@@ -199,6 +201,8 @@ C. S3 standard.
 D. Amazon Glacier.
 
 Correct Answer: B
+
+Reason: There needs to be more information, specifically as to how often these objects will be accessed over the coming months of years to form a plan for moving files into a respective storage class.
 
 
 
@@ -228,6 +232,7 @@ D. Create the new users in the primary region and then replicate them to the new
 
 Correct Answer: B
 
+Reason: IAM Users and Roles are not region-specific, but the resources referened like S3 buckets or Load Balancers might be, so use caution.
 
 
 16\. Policy documents are written in which of the following languages?
@@ -256,6 +261,7 @@ D. Consider installing a storage gateway with stored volumes at the customer's o
 
 Correct Answer: C
 
+Reason: It would not be A because this is not a frequent high performance scenario like a production app, so it is not a Redis like caching problem. Elasticache would technically work, but is not the best option because the large PDFs would be stored in RAM, which could be a significant cost (RAM is a lot more expensive than traditional storage). Cloudfront is a CDN that doesn't necessarily fit this use case, and Storage Gateway is a link to an S3 bucket, not RDS.
 
 
 18\. You have a primary database set up to use read replicas running on an instance in US East 1. You have three read replicas also in US East 1 and two more replicas in US West 2. You are getting an error when trying to create a new replica in EU West 1. To resolve this problem and create a new read replica in EU West 1, what should you do?
@@ -297,6 +303,8 @@ C. PostgreSQL.
 D. MariaDB.
 
 Correct Answer: A
+
+Reason: AWS RDS supports read replicas, and all three database engines fall under the RDS umbrella.
 
 
 
@@ -354,6 +362,7 @@ D. Weighted routing.
 
 Correct Answer: A
 
+Reason: Multivalue answer routing is when a DNS server returns multiple IP addresses to distribute load across different endpoints, latency-based routing is for geolocation-based performance optimization, weighted routing requires a load balancer and can be useful for scenarios like A-B testing. Note that multivalue answer routing via Route 53 is not a replacement for a load balancer.
 
 
 25\. In relation to the standard data transfer charge, how much will you be charged when replicating data from a primary RDS instance to a secondary one?
@@ -382,6 +391,7 @@ D. Direct Connect.
 
 Correct Answer: C
 
+Reason: Network latency during data transfer to S3 seems like a bandwidth issue. Transfer Acceleration and VPN won't necessary solve that issue. Direct connect is a long term solution for if a company wants to directly link their on-prem services with AWS, leaving Snowball to be the last and correct option.
 
 
 27\. All of the following are valid attributes for an elastic network interface **EXCEPT** `_________`.
@@ -396,6 +406,7 @@ D. An IPv4 address.
 
 Correct Answer: A
 
+Reason: Routing tables belong to a VPC, while ENIs are more instance level/EC2 level.
 
 
 28\. The CIDR block 0.0.0.0/0 represents `_________`.
@@ -438,6 +449,7 @@ D. The AWS console.
 
 Correct Answer: C
 
+Reason: AWS EBS management tool doesn't seem to be a service that AWS actually offers.
 
 
 31\. What is the number of network interfaces can a single instance have?
@@ -466,6 +478,16 @@ D. You need dual-homed instances.
 
 Correct Answer: B
 
+Reason: From the AWS docs, Attaching multiple network interfaces to an instance is useful when you need the following:
+
+    A management network.
+
+    Network and security appliances.
+
+    Dual-homed instances with workloads in different subnets or VPCs.
+
+    A low-budget, high-availability solution.
+
 
 
 33\. A bastion host is used to connect to which of the following?
@@ -480,9 +502,10 @@ D. A public instance in a public subnet.
 
 Correct Answer: A
 
+Reason: Instance state is determined by the subnet state, so it cannot be B or C. By definition of a bastion server, it has to be A.
 
 
-34\. According to the AWS well-architected framework, which of the following is **NOT** one of the five pillars in the cloud?
+34\. According to the AWS well-architected framework, which of the following is **NOT** one of the six pillars in the cloud?
 
 A. Performance efficiency.
 
@@ -494,6 +517,7 @@ D. Organizational blueprint.
 
 Correct Answer: D
 
+Reason: The AWS well-architect framework defines the following six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
 
 
 35\. What encryption service do encrypted EBS volumes use?
@@ -536,6 +560,7 @@ D. You want to avoid making changes to your security groups.
 
 Correct Answer: A
 
+Reason: C and D is also plausible, but for any complex workloads you probably wouldn't attach elastic IP addresses to an EC2 instance unless for some reason you wanted to run a custom NginX instance over an AWS native load balancer (note that for multiple choice answers, C and D should probably be correct choices). B is not a valid answer as elastic IP addresses don't come in iPv6 since there is an abundance of these addresses.
 
 
 38\. Concerning internet gateways, all of the following statements are true **EXCEPT** `_________`.
@@ -568,6 +593,7 @@ D. No.
 
 Correct Answer: D
 
+Note that for NACL rules, lowest numbered rules are evaluated first. There isn't a rule that belongs to port 22 though, so the correct answer is D.
 
 
 40\. You have an application which has a 200 GB database running on an EC2 instance. Because of a custom spatial plug-in, you cannot move the database to RDS. The application is currently peaking in the morning and the evening, but the peaks are small and usage throughout the day is low. What storage type would you use to ensure solid performance but keep costs low?
@@ -582,6 +608,7 @@ D. EBS with a magnetic HDD.
 
 Correct Answer: C
 
+Reason: Ensuring solid performance while keeping costs low means finding a middle ground, and the option for that is a General Purpose SSD (gp2), hence the correct answer being C.
 
 
 41\. You are migrating a large on-premises application suite to AWS. Your company has invested a large amount of time and money in Chef for configuration and management and doesn't want this investment to be wasted. What could you use to preserve this functionality and keep costs low?
@@ -595,6 +622,8 @@ C. CloudWatch.
 D. Service Catalog.
 
 Correct Answer: B
+
+Reason: AWS OpsWorks uses Chef configuration files to provision resources, hence B being the correct answer.
 
 
 
