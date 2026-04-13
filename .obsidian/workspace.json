@@ -185,6 +185,8 @@
   },
   "active": "30a01c0c2d6a83c9",
   "lastOpenFiles": [
+    "wiki/aws-certification/aws-well-architected-framework.md",
+    "raw/aws-certification/aws-well-architected-framework-definitions.md",
     "wiki/aws-certification/nat-gateways-vs-nat-instances.md",
     "raw/aws-certification/2026-04-10-compare-nat-gateways-and-nat-instances.md",
     "wiki/aws-certification/network-access-control-lists.md",
@@ -209,8 +211,6 @@
     "ExamCert.md",
     "raw/aws-certification/practice-questions/Free AWS SAA-C03 Practice Questions 2026 300+ Exam Questions.md",
     "wiki/aws-certification/amazon-aurora.md",
-    "wiki/aws-certification/amazon-rds.md",
-    "raw/aws-certification/2026-04-09-what-is-amazon-aurora.md",
     "Untitled.canvas",
     "Untitled 3.canvas",
     "Untitled 2.canvas",

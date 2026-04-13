@@ -1,11 +1,11 @@
 # AWS Certified Solutions Architect - Associate (SAA-C03)
 > Sources: AWS Documentation (Exam Guide), 2026-04-09; AWS Documentation (Content Domain 1), 2026-04-09; AWS Documentation (Content Domain 2), 2026-04-09; AWS Documentation (Content Domain 3), 2026-04-09; AWS Documentation (Content Domain 4), 2026-04-09; AWS Documentation (Technologies and Concepts), 2026-04-09; AWS Documentation (Service Mentions), 2026-04-09; AWS Documentation (In-Scope Services), 2026-04-09; AWS Documentation (Out-of-Scope Services), 2026-04-09
 > Raw: [Exam Guide](../../raw/aws-certification/2026-04-09-saa-c03-exam-guide.md); [Domain 1](../../raw/aws-certification/2026-04-09-saa-c03-domain-1-secure-architectures.md); [Domain 2](../../raw/aws-certification/2026-04-09-saa-c03-domain-2-resilient-architectures.md); [Domain 3](../../raw/aws-certification/2026-04-09-saa-c03-domain-3-high-performing-architectures.md); [Domain 4](../../raw/aws-certification/2026-04-09-saa-c03-domain-4-cost-optimized-architectures.md); [Technologies and Concepts](../../raw/aws-certification/2026-04-09-saa-c03-technologies-and-concepts.md); [Service Mentions](../../raw/aws-certification/2026-04-09-saa-c03-service-mentions.md); [In-Scope Services](../../raw/aws-certification/2026-04-09-saa-c03-in-scope-services.md); [Out-of-Scope Services](../../raw/aws-certification/2026-04-09-saa-c03-out-of-scope-services.md)
-> Updated: 2026-04-09
+> Updated: 2026-04-11
 
 ## Overview
 
-The SAA-C03 guide defines the associate solutions architect exam as an AWS Well-Architected-centered design exam. It tests whether a candidate can design secure, resilient, high-performing, and cost-optimized solutions, choose appropriate AWS services, and improve existing architectures. AWS frames the exam around four weighted domains, with explicit task statements and supporting references for concepts, service naming, and which AWS services are in or out of scope.
+The SAA-C03 guide defines the associate solutions architect exam as an AWS Well-Architected-centered design exam. It tests whether a candidate can design secure, resilient, high-performing, and cost-optimized solutions, choose appropriate AWS services, and improve existing architectures. Those four scored domains map closely to core Well-Architected concerns, even though the broader AWS Well-Architected Framework now spans six pillars by also including operational excellence and sustainability. AWS frames the exam around four weighted domains, with explicit task statements and supporting references for concepts, service naming, and which AWS services are in or out of scope.
 
 ## Exam Format And Expectations
 
@@ -95,6 +95,7 @@ AWS notes that the exam often uses official short service names instead of full 
 
 ## See Also
 
+- [AWS Well-Architected Framework](aws-well-architected-framework.md)
 - [SAA-C03 In-Scope Service Catalog](saa-c03-in-scope-service-catalog.md)
 - [Application Integration Services For SAA-C03](application-integration-services-for-saa-c03.md)
 - [SAA-C03 Practice Question Patterns](saa-c03-practice-question-patterns.md)

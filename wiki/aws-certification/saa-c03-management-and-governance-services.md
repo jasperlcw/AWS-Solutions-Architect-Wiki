@@ -1,7 +1,7 @@
 # SAA-C03 Management And Governance Services
 > Sources: AWS Documentation (Per-Service Docs Corpus), 2026-04-09; AWS Documentation (In-Scope Services), 2026-04-09
 > Raw: [AWS Auto Scaling](aws-auto-scaling.md); [AWS CLI](aws-cli.md); [AWS CloudFormation](aws-cloudformation.md); [AWS CloudTrail](aws-cloudtrail.md); [Amazon CloudWatch](amazon-cloudwatch.md); [AWS Compute Optimizer](aws-compute-optimizer.md); [AWS Config](aws-config.md); [AWS Control Tower](aws-control-tower.md); [AWS Health Dashboard](aws-health-dashboard.md); [AWS License Manager](aws-license-manager.md); [Amazon Managed Grafana](amazon-managed-grafana.md); [Amazon Managed Service for Prometheus](amazon-managed-service-for-prometheus.md); [AWS Management Console](aws-management-console.md); [AWS Organizations](aws-organizations.md); [AWS Service Catalog](aws-service-catalog.md); [AWS Systems Manager](aws-systems-manager.md); [AWS Trusted Advisor](aws-trusted-advisor.md); [AWS Well-Architected Tool](aws-well-architected-tool.md); [In-Scope Services](../../raw/aws-certification/2026-04-09-saa-c03-in-scope-services.md)
-> Updated: 2026-04-09
+> Updated: 2026-04-11
 
 ## Overview
 
@@ -65,7 +65,7 @@ Control Tower builds on multi-account governance with landing zone and guardrail
 
 ### AWS Well-Architected Tool
 
-This tool supports structured reviews against the Well-Architected pillars and appears when AWS emphasizes architecture review discipline rather than runtime operations.
+This tool supports structured reviews against the AWS Well-Architected Framework and appears when AWS emphasizes architecture review discipline rather than runtime operations. The framework now uses six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
 
 ## Operations And Optimization
 
@@ -106,5 +106,6 @@ License Manager appears when the architecture needs software-license visibility 
 
 ## See Also
 
+- [AWS Well-Architected Framework](aws-well-architected-framework.md)
 - [SAA-C03 In-Scope Service Catalog](saa-c03-in-scope-service-catalog.md)
 - [AWS Certified Solutions Architect - Associate (SAA-C03)](solutions-architect-associate-saa-c03.md)

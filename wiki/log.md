@@ -53,3 +53,7 @@
 
 ## [2026-04-10] ingest | NAT Gateways Vs NAT Instances
 - Updated: Amazon VPC
+
+## [2026-04-11] ingest | AWS Well-Architected Framework
+- Updated: AWS Certified Solutions Architect - Associate (SAA-C03)
+- Updated: SAA-C03 Management And Governance Services
