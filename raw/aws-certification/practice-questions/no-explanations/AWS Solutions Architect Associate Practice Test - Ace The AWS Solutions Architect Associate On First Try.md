@@ -681,6 +681,7 @@ D. Two or more.
 
 Correct Answer: A
 
+Reason: There are three types of placement groups: cluster, partition, and spread. Cluster relates to clustering a group of EC2 instances in the same AZ to improve network performance. Partition relates to separating out groups of EC2 instances so that they're not running on the same hardware, and is ideal for distributed workloads like Kafka. Spread is to spread out instances across distinct underlying instances (and optionally across AZs) to reduce correlated failures.
 
 
 46\. You are new on a project that makes heavy use of AWS. Reducing costs and identifying security risks are your first priorities. To scan the current environment and set initial priorities for change, what tool could you use?
@@ -694,6 +695,8 @@ C. AWS Organizations.
 D. AWS Directory Server.
 
 Correct Answer: A
+
+Reason: Cloudtrail is for logs, Organizations is for separating out different accounts into OUs, Directory Server is for managing an MS AD instance. None of these three services analyze cost, hence A being the correct answer.
 
 
 
@@ -709,6 +712,7 @@ D. Transferring data from S3 to CloudFront.
 
 Correct Answer: D
 
+Reason: Transfer Acceleration is a service that incurs cost based on usage. For EC2 instances the cost of transferring data is calculated by the usage of the ENI. Distributing data via Cloudfront would also incur costs for the account. Hence, D is the correct answer.
 
 
 48\. What is the **MOST** cost-effective access to compute resources?
@@ -723,6 +727,7 @@ D. Dedicated hosts.
 
 Correct Answer: C
 
+Note: Only use spot instances if you have workloads where it's safe if they're unexpectedly terminated as spot usage is not guaranteed.
 
 
 49\. Your task is to reduce the costs associated with a large fleet of EC2 instances that currently run multiple custom processes which collect and collate data from a number of streaming data sources outside your network. To replace these instances, what AWS managed service would you use?
