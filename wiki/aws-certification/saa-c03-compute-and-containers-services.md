@@ -1,7 +1,7 @@
 # SAA-C03 Compute And Containers Services
-> Sources: AWS Documentation (Per-Service Docs Corpus), 2026-04-09; AWS Documentation (In-Scope Services), 2026-04-09; AWS Documentation, Unknown
-> Raw: [AWS Batch](../../raw/aws-certification/service-docs/aws-batch.md); [Amazon EC2](../../raw/aws-certification/service-docs/amazon-ec2.md); [What is Amazon EC2?](../../raw/aws-certification/2026-04-09-what-is-amazon-ec2.md); [Amazon EC2 Auto Scaling](../../raw/aws-certification/service-docs/amazon-ec2-auto-scaling.md); [AWS Elastic Beanstalk](../../raw/aws-certification/service-docs/aws-elastic-beanstalk.md); [AWS Outposts](../../raw/aws-certification/service-docs/aws-outposts.md); [AWS Serverless Application Repository](../../raw/aws-certification/service-docs/aws-serverless-application-repository.md); [VMware Cloud on AWS](../../raw/aws-certification/service-docs/vmware-cloud-on-aws.md); [AWS Wavelength](../../raw/aws-certification/service-docs/aws-wavelength.md); [Amazon ECR](../../raw/aws-certification/service-docs/amazon-ecr.md); [Amazon ECS](../../raw/aws-certification/service-docs/amazon-ecs.md); [Amazon ECS Anywhere](../../raw/aws-certification/service-docs/amazon-ecs-anywhere.md); [Amazon EKS](../../raw/aws-certification/service-docs/amazon-eks.md); [Amazon EKS Anywhere](../../raw/aws-certification/service-docs/amazon-eks-anywhere.md); [Amazon EKS Distro](../../raw/aws-certification/service-docs/amazon-eks-distro.md); [In-Scope Services](../../raw/aws-certification/2026-04-09-saa-c03-in-scope-services.md)
-> Updated: 2026-04-09
+> Sources: AWS Documentation (Per-Service Docs Corpus), 2026-04-09; AWS Documentation (In-Scope Services), 2026-04-09; AWS Documentation, Unknown; AWS Documentation, Unknown
+> Raw: [AWS Batch](../../raw/aws-certification/service-docs/aws-batch.md); [Amazon EC2](../../raw/aws-certification/service-docs/amazon-ec2.md); [What is Amazon EC2?](../../raw/aws-certification/2026-04-09-what-is-amazon-ec2.md); [Placement groups for your Amazon EC2 instances](../../raw/aws-certification/service-docs/ec2-placement-groups.md); [Amazon EC2 Auto Scaling](../../raw/aws-certification/service-docs/amazon-ec2-auto-scaling.md); [AWS Elastic Beanstalk](../../raw/aws-certification/service-docs/aws-elastic-beanstalk.md); [AWS Outposts](../../raw/aws-certification/service-docs/aws-outposts.md); [AWS Serverless Application Repository](../../raw/aws-certification/service-docs/aws-serverless-application-repository.md); [VMware Cloud on AWS](../../raw/aws-certification/service-docs/vmware-cloud-on-aws.md); [AWS Wavelength](../../raw/aws-certification/service-docs/aws-wavelength.md); [Amazon ECR](../../raw/aws-certification/service-docs/amazon-ecr.md); [Amazon ECS](../../raw/aws-certification/service-docs/amazon-ecs.md); [Amazon ECS Anywhere](../../raw/aws-certification/service-docs/amazon-ecs-anywhere.md); [Amazon EKS](../../raw/aws-certification/service-docs/amazon-eks.md); [Amazon EKS Anywhere](../../raw/aws-certification/service-docs/amazon-eks-anywhere.md); [Amazon EKS Distro](../../raw/aws-certification/service-docs/amazon-eks-distro.md); [In-Scope Services](../../raw/aws-certification/2026-04-09-saa-c03-in-scope-services.md)
+> Updated: 2026-04-13
 
 ## Overview
 
@@ -21,7 +21,7 @@ This page groups the SAA-C03 compute and container services that determine how m
 
 ### Amazon EC2
 
-Amazon EC2 is the baseline compute service for workloads that need operating system control, custom software installation, instance family tuning, or direct control over storage and networking. If the question centers on instance selection, EBS attachment, custom AMIs, security groups, placement groups, or reserved capacity behavior, EC2 is usually the anchor service.
+Amazon EC2 is the baseline compute service for workloads that need operating system control, custom software installation, instance family tuning, or direct control over storage and networking. If the question centers on instance selection, EBS attachment, custom AMIs, security groups, placement groups, or reserved capacity behavior, EC2 is usually the anchor service. Placement groups are the specific EC2 feature to remember when the problem is about topology between instances: cluster for low-latency tightly coupled nodes, partition for distributed rack-aware fault domains, and spread for a few critical instances on distinct hardware.
 
 ### Amazon EC2 Auto Scaling
 
@@ -95,5 +95,6 @@ EKS Distro is the open-source Kubernetes distribution aligned with EKS. It is mo
 ## See Also
 
 - [Amazon EC2](amazon-ec2.md)
+- [EC2 Placement Groups](ec2-placement-groups.md)
 - [SAA-C03 In-Scope Service Catalog](saa-c03-in-scope-service-catalog.md)
 - [AWS Certified Solutions Architect - Associate (SAA-C03)](solutions-architect-associate-saa-c03.md)

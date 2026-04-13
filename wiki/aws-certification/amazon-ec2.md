@@ -1,7 +1,7 @@
 # Amazon EC2
-> Sources: AWS Documentation, Unknown; AWS Documentation (Per-Service Docs Corpus), 2026-04-09
-> Raw: [What is Amazon EC2?](../../raw/aws-certification/2026-04-09-what-is-amazon-ec2.md); [Amazon EC2](../../raw/aws-certification/service-docs/amazon-ec2.md)
-> Updated: 2026-04-09
+> Sources: AWS Documentation, Unknown; AWS Documentation (Per-Service Docs Corpus), 2026-04-09; AWS Documentation, Unknown
+> Raw: [What is Amazon EC2?](../../raw/aws-certification/2026-04-09-what-is-amazon-ec2.md); [Amazon EC2](../../raw/aws-certification/service-docs/amazon-ec2.md); [Placement groups for your Amazon EC2 instances](../../raw/aws-certification/service-docs/ec2-placement-groups.md)
+> Updated: 2026-04-13
 
 ## Overview
 
@@ -39,8 +39,20 @@ These basics show up repeatedly in SAA-C03 because they define whether a design 
 - Use CloudWatch for instance and EBS monitoring signals.
 - Use Systems Manager when the question emphasizes fleet operations, secure administration, or remote management at scale.
 - Use Image Builder when the architecture depends on repeatable hardened images.
+- Use placement groups when the requirement is about instance topology itself, such as low-latency tightly coupled nodes, rack-aware partitioning, or keeping a few critical instances on distinct hardware.
 
 For SAA-C03, EC2 is often correct only as part of a broader pattern such as EC2 plus ALB plus Auto Scaling plus EBS.
+
+## Placement Groups
+
+Placement groups are an EC2-specific placement control rather than a scaling service. The exam usually tests them by asking what kind of instance-to-instance topology the workload needs.
+
+- Cluster placement groups are for low-latency, high-throughput communication among tightly coupled instances within one Availability Zone.
+- Partition placement groups are for large distributed systems that need logical fault domains and rack-level separation.
+- Spread placement groups are for a small number of critical instances that should not share underlying hardware.
+- Placement groups do not replace multi-AZ design, Auto Scaling, or load balancing. They fine-tune how instances are positioned on hardware.
+
+Another recurring trap is capacity language: On-Demand Capacity Reservations can still matter with placement groups, but pricing instruments like Reserved Instances are not the same as explicit topology-aware capacity guarantees.
 
 ## Pricing Models That Matter On The Exam
 
@@ -69,6 +81,7 @@ One recurring exam trick is separating price discount instruments from capacity 
 
 ## See Also
 
+- [EC2 Placement Groups](ec2-placement-groups.md)
 - [SAA-C03 Compute And Containers Services](saa-c03-compute-and-containers-services.md)
 - [SAA-C03 Storage Services](saa-c03-storage-services.md)
 - [SAA-C03 Cost Management Services](saa-c03-cost-management-services.md)

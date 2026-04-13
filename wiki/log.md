@@ -56,4 +56,8 @@
 
 ## [2026-04-11] ingest | AWS Well-Architected Framework
 - Updated: AWS Certified Solutions Architect - Associate (SAA-C03)
+
+## [2026-04-13] ingest | EC2 Placement Groups
+- Updated: Amazon EC2
+- Updated: SAA-C03 Compute And Containers Services
 - Updated: SAA-C03 Management And Governance Services
