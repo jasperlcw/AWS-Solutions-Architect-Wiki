@@ -696,7 +696,7 @@ D. AWS Directory Server.
 
 Correct Answer: A
 
-Reason: Cloudtrail is for logs, Organizations is for separating out different accounts into OUs, Directory Server is for managing an MS AD instance. None of these three services analyze cost, hence A being the correct answer.
+Reason: Cloudtrail is for logs, Organizations is for separating out different accounts into OUs, Directory Server is for managing an MS AD instance. Trusted Advisor is a tool that provides advice for best practice, and one of the six pillars of cloud computing is cost optimization, hence A being the correct answer.
 
 
 
@@ -742,6 +742,7 @@ D. CloudFormation.
 
 Correct Answer: A
 
+Reason: The keyword to this question is streaming data, hence A being the correct answer for Kinesis.
 
 
 50\. `_________` is an AWS support plan.
@@ -771,6 +772,8 @@ D. Glacier with expedited retrieval.
 Correct Answer: D
 
 
+Reason: Inside of S3 Glacier, there are three tiers: Instant Retrieval, Flexible Retrieval (expedited, standard or bulk), and Deep Archive. Expedited retrieval is in the order of 1-5 minutes where as the other options (excluding Instant Retrieval) are in the order of hours.
+
 
 52\. Which tool allows you to cut off all access to your S3 buckets when a certain cost threshold is met?
 
@@ -784,6 +787,7 @@ D. None of these answers.
 
 Correct Answer: D
 
+Reason: There is no AWS service that can explicitly cut off access to other services based on cost.
 
 
 53\. The managed service that coordinates activities between different applications is `_________`.
@@ -798,6 +802,7 @@ D. S3.
 
 Correct Answer: C
 
+Reason: While SQS can be used by an app to coordinate between other apps on an application level viewpoint, SWF (Simple Workflow) is the tool for running jobs that have parallel or sequential steps that need to talk to each other.
 
 
 54\. The AWS service abbreviated as ECS stands for `_________`.
@@ -826,6 +831,7 @@ D. Set the ALB to send a redirect header to clients with the IP addresses of the
 
 Correct Answer: C
 
+Reason: Creating CNAME records would work and is often used for DNS services other than Route 53 (such as Cloudflare), but the best practice for Route 53 AWS native entries is to create an alias record.
 
 
 56\. A VPC peering connection is `_________`.
@@ -906,9 +912,9 @@ B. MX.
 
 C. CNAME.
 
-D. AAAA.
+D. A record with alias.
 
-Correct Answer: C
+Correct Answer: D
 
 
 
@@ -918,7 +924,7 @@ A. ECS, EMR, EC2.
 
 B. ECR, ECS, S3.
 
-C. ECR, ECS, EC2.
+C. ECR, ECS, ELB.
 
 D. Fargate, ECS, S3.
 
@@ -932,12 +938,13 @@ A. SQS messages expire every 12 hours and must be re-entered into the queue. The
 
 B. Your SQS queue needs to be restarted; it is likely not correctly queuing messages. The polling interval is also set too high, causing the long lack of visibility of the message.
 
-C. Processing is failing, or not completing, in the application instance. The message disappears because the SQS queue keeps it â€œinvisibleâ€ for 12 hours while it is being processed. The message is then returned to the queue for processing if not handled prior to that timeout.
+C. Processing is failing, or not completing, in the application instance. The message disappears because the SQS queue keeps it invisible for 12 hours while it is being processed. The message is then returned to the queue for processing if not handled prior to that timeout.
 
 D. The SQS queue has a visibility timeout that is set too high. The timeout should be reduced so that application instances can process the message more quickly.
 
 Correct Answer: C
 
+Reason: In this scenario, the issue seems to reside with the application instances, so it is not an issue with SQS. This means that we can effectively rule out A, B, and D as the answers, leaving C as the correct answer.
 
 
 64\. The number of domain names you can manage using Route 53 is \_\_\_.
