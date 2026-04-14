@@ -1,3 +1,5 @@
 # Obsidian Canvas
 *.canvas
 
+# Codex generated file
+.codex
