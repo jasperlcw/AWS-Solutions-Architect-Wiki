@@ -8,3 +8,6 @@ Once the skill is set up, ingest AWS documents by prompting the agent to ingest 
 `Ingest this into the LLM wiki: https://docs.aws.amazon.com/aws-certification/latest/solutions-architect-associate-03/solutions-architect-associate-03.html`
 
 Use this idea to create a strong knowledge base, then ask it to generate new practice questions based on concrete practice questions sourced from the web.
+
+# Disclaimer
+This repo contains questions and answers that were sourced from the open internet. Official practice questions from AWS or other practice exam providers were not used.
